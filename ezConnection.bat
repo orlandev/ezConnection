@@ -13,15 +13,24 @@ echo Inmersoft Connections Tools v0.1
 
 echo Desconectando todo...
 openvpn-gui --command disconnect_all
-echo Deshabilitando interface de red...
+echo Deshabilitando interface de red Ethernet...
 netsh interface set interface "Ethernet" disabled
+
+echo Deshabilitando interface de red Wi-Fi...
+netsh interface set interface "Wi-Fi" disabled
+
 echo Interface de red Deshabilitada
 
 timeout 2
 
-echo Habilitando interface de red...
+echo Habilitando interface de red Ethernet...
 netsh interface set interface "Ethernet" enabled
-echo Interface de red Habilitada
+
+echo Habilitando interface de red Wi-Fi...
+netsh interface set interface "Wi-Fi" enabled
+
+echo Interface de red Habilitada Ethernet
+echo Interface de red Habilitada "Wi-Fi"
 
 timeout 5
 
