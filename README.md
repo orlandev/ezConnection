@@ -3,3 +3,7 @@ This script allows the Inmersoft group's Marketing and Design development team t
 
 NOTE:
 Add the address where the OpenVPN-GUI is located to the PATH environment variable.
+
+OR
+
+Use the script addOVPN2Path.bat for madeit automatic
